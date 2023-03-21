@@ -214,9 +214,9 @@ namespace ConsoleApplication1
             Math.Round(porc5);
             Math.Round(porc10);
             Math.Round(porc15);
-            Console.WriteLine("percentual de pessoas com 5% decimal acrecimo é de:" + porc5 + "%");
-            Console.WriteLine("percentual de pessoas com 5% decimal acrecimo é de:" + porc10 + "%");
-            Console.WriteLine("percentual de pessoas com 5% decimal acrecimo é de:" + porc15 + "%");
+            Console.WriteLine("percentual de pessoas com 5% de acrecimo é de:" + porc5 + "%");
+            Console.WriteLine("percentual de pessoas com 10% de acrecimo é de:" + porc10 + "%");
+            Console.WriteLine("percentual de pessoas com 15% de acrecimo é de:" + porc15 + "%");
             //end G2
 
             
