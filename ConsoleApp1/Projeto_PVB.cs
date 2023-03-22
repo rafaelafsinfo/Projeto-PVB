@@ -3,9 +3,10 @@
  * Colegio Técnico Antônio Teixeira Fernandes (Univap)
  * Curso Técnico em Informática - Data de Entrega: 22/03/2023
  * Autores do Projeto: Rafael Alves Freitas da Silva
+ *                      luiz Guilherme Marcondes e Silva
  * Turma: 2F
  * Atividade Proposta em aula
- * Observação: teste de consição do menor salario com problema
+ * Observação: 
  * 
  * projeto.cs
  * ************************************************************/
@@ -115,11 +116,13 @@ namespace ConsoleApplication1
                 
                 if (maior_sal < salario)
                 {
-                    maior_sal = salario;
+                     maior_sal = salario;
                     maior_nome = nome;
                     maior_idade = idade;
                     maior_grau = grau;
                 }
+
+                menor_sal = maior_sal;
                 if (salario < menor_sal)
                 {
                     menor_sal = salario;
@@ -130,17 +133,17 @@ namespace ConsoleApplication1
                 
 
                 
-                if (idade > 20 && idade <35)
+                if (idade >= 20 && idade < 35)
                 {
                     salario = salario + (salario * 0.05);
                     total5++;
                 }
-                if (idade > 35 && idade < 45)
+                if (idade >= 35 && idade < 45)
                 {
                     salario = salario + (salario * 0.1);
                     total10++;
                 }
-                if (idade > 45)
+                if (idade >= 45)
                 {
                     salario = salario + (salario * 0.15);
                     total15++;
@@ -149,6 +152,7 @@ namespace ConsoleApplication1
 
                 
                 sal_dolar = salario / dolar;
+                Math.Round(sal_dolar, 2);
                 Console.WriteLine("nome: " + nome + "\nsalário em dolar:" + sal_dolar);
                 
 
@@ -204,9 +208,9 @@ namespace ConsoleApplication1
             Math.Round(porc5);
             Math.Round(porc10);
             Math.Round(porc15);
-            Console.WriteLine("percentual de pessoas com 5% decimal acrecimo é de:" + porc5 + "%");
-            Console.WriteLine("percentual de pessoas com 5% decimal acrecimo é de:" + porc10 + "%");
-            Console.WriteLine("percentual de pessoas com 5% decimal acrecimo é de:" + porc15 + "%");
+            Console.WriteLine("percentual de pessoas com 5% de acrecimo é de:" + porc5 + "%");
+            Console.WriteLine("percentual de pessoas com 10% de acrecimo é de:" + porc10 + "%");
+            Console.WriteLine("percentual de pessoas com 15% de acrecimo é de:" + porc15 + "%");
             
 
             
